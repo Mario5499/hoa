@@ -142,13 +142,13 @@ except NoSuchElementException:
 #further automations
 driver.get(seting)
 time.sleep(10)
-delbutton = driver.find_element(By.XPATH, "//*[@id="dialog-show-repo-delete-menu-dialog"]")
+delbutton = driver.find_element(By.XPATH, '//*[@id="dialog-show-repo-delete-menu-dialog"]')
 delbutton.click()
 time.sleep(10)
-delfi = driver.find_element(By.XPATH, "//*[@id="repo-delete-proceed-button"]")
+delfi = driver.find_element(By.XPATH, '//*[@id="repo-delete-proceed-button"]')
 delfi.click()
 time.sleep(10)
-delfi2 = driver.find_element(By.XPATH, "//*[@id="repo-delete-proceed-button"]")
+delfi2 = driver.find_element(By.XPATH, '//*[@id="repo-delete-proceed-button"]')
 delfi2.click()
 time.sleep(10)
 
@@ -157,7 +157,7 @@ repo_value = inpbo.get_attribute("data-repo-nwo")
 
 inpbo.send_keys(repo_value)
 time.sleep(10)
-delfi2 = driver.find_element(By.XPATH, "//*[@id="repo-delete-proceed-button"]")
+delfi2 = driver.find_element(By.XPATH, '//*[@id="repo-delete-proceed-button"]')
 delfi2.click()
 
 driver.quit()
